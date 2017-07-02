@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Javascript Example</title>
+<style type = "text/css">
+{
+background-color: #B0C4DE;
+}
+</style>
+</head>
+<body>
+<h1> Data Visualization -: Javascript Example</h1>
+<h2>Objects Used: Kshitija Kulkarni</h2>
+<ol type="1" id=javascript>
+<li style='background-color: #D8BFD8;' id="Array" onclick="Display_array()" > Display <b>Array</b> </li>
+<li style='background-color: #FFDAB9;' id="Object" onclick="Display_object()" > Display <b>Object</b> </li>
+<li style='background-color: #B0E0E6;' id="Dataset" onclick="Display_dataset()" > Display <b>Dataset</b> </li>
+<ol type="1">
+<script type="text/javascript">
+function Display_array() { 
+	var li = document.getElementById("Array");
+	var ul = document.createElement("ul"); 
+	var nestedLi = ul.appendChild(document.createElement("li")); 
+	nestedLi.appendChild(document.createTextNode("To view contents of the Array type 'console.log(array)' in the console" ));
+	li.appendChild(ul); 
+	console.log(array); 
+}
+	function Display_object() { 
+	var li = document.getElementById("Object"); 
+	var ul = document.createElement("ul"); 
+	var nestedLi = ul.appendChild(document.createElement("li")); 
+	nestedLi.appendChild(document.createTextNode("To view contents of the Object type 'console.log(Object)' in the console" )); 
+	li.appendChild(ul);
+	var nestedLi = ul.appendChild(document.createElement("li"));
+	nestedLi.appendChild(document.createTextNode("To view contents of the Object attribute 'console.log(Object.Name)' in the console" ));
+	li.appendChild(ul);
+	console.log(Object);
+	}
+	 function Display_dataset()
+	 {
+		 var li = document.getElementById("Dataset");
+		 var ul = document.createElement("ul");
+		 var nestedLi = ul.appendChild(document.createElement("li")); 
+		 li.appendChild(ul);
+		 nestedLi.appendChild(document.createTextNode("To view contents of the Object type 'console.log(Object)' or just 'dataset' in the console" )); 
+		 console. log(dataset);
+	 }
+		 var count = 10;
+		 var name = "Tom";
+		 var array = ["Tom","Dick", "Alice"];
+		 var object = {
+				 "Name": "Tom",
+				 "Age": 20,
+				 "Major": "ITM"
+		 };
+		 var dataset=[
+			 {
+				 "Name": "Tom",
+				 "Age": 29,
+				 "Major": "ITM"	
+			 },
+			 {
+				 "Name": "Harry",
+				 "Age": 25,
+				 "Major": "Accounting"
+			 },
+			 {
+				 "Name": "Alice",
+				 "Age": 27,
+				 "Major": "SCM"
+			 },
+			 
+		 ];
+</script>
+</body>
+</html>
